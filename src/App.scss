@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #9796f0, #fbc7d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 200vh;
+
+  h1 {
+    font-size: 8rem;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    color: rgb(135, 60, 255);
+    text-shadow: 0 0.2rem .1rem rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin: 4rem 0;
+  }
+
+  .search-form {
+    width: 60rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 0.5rem;
+    margin-bottom: 5rem;
+    box-shadow: .1rem 0rem 1rem #92a2e6;
+    position: relative;
+
+    .alert {
+      position: absolute;
+      top: -3rem;
+      left: 0;
+      background-color: rgb(233, 72, 72);
+      width: calc(100% - 0.4rem);
+      border-radius: 0.5rem;
+      padding: 0.2rem;
+
+      h3 {
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      
+    }
+  }
+
+  input {
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    height: 3rem;
+  }
+
+  input[type="text"] {
+    padding: 0 0.5rem;
+    width: 60%;
+    color: rgba(0, 0, 0, .6);
+  }
+  
+  input[type="submit"] {
+    width: 25%;
+    text-transform: uppercase;
+    background-color: rgb(135, 60, 255);
+    color: #fff;
+  }
+
+  .recipes {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    .recipe {
+      width: 30rem;
+      margin: 3rem;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, .7);
+      padding: 2rem;
+      position: relative;
+      border-radius: 0.5rem;
+      box-shadow: 1rem 1rem 5rem #acb6e5;
+
+      h2 {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 0.5rem;
+        padding: 0.3rem 0.5rem;
+        position: absolute;
+        top: 2.5rem;
+        left: 2.5rem;
+        right: 2.5rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-shadow: 0 0.2rem 0.5rem #acb6e5;
+        color: rgba(0, 0, 0, .7);
+        z-index: 1;
+      }
+
+      img {
+        border-radius: 0.5rem;
+        object-fit: cover;
+        transition: all .3s;
+      
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      a {
+        margin: 1rem 0;
+        font-size: 1.8rem;
+        color: rgb(135, 60, 255);
+      }
+
+      button {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, .7);
+        background-color: rgb(135, 60, 255);
+        border: none;
+        border-radius: 0.5rem;
+        height: 3rem;
+      }
+
+      .ingredient-list {
+        margin-top: 1rem;
+        background-color: #f0f0f0;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+
+        li {
+          margin: 0.5rem 0;
+        }
+
+        .ingredient-text {
+          font-size: 1.5rem;
+          color: #888;
+        }
+        
+        .ingredient-weight {
+          color: rgb(135, 60, 255);
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
