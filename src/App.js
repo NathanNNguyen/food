@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Food Database</h1>
+      <h1>Recipes Database</h1>
       <Form submit={submit} error={error} query={query} setQuery={setQuery} />
       <div className='recipes'>
         {recipes !== [] && recipes.map(recipe =>

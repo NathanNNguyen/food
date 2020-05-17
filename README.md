@@ -1,6 +1,8 @@
-# Food Database
+# Recipes Database
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An app that allows users to search for food recipes (React)
+
+[Live](https://recipes-db.now.sh/)
 
 ## Available Scripts
 
